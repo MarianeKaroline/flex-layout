@@ -1,0 +1,19 @@
+<div class="container-1" fxLayoutAlign="space-between center">
+  <div class="content-1">
+    <app-perguntas></app-perguntas>
+  </div>
+  <div class="content-2">
+    <app-codigo></app-codigo>
+  </div>
+</div>
+<div class="container-3" fxLayoutAlign="center center">
+  <div class="content-3">
+    <app-administracao></app-administracao>
+  </div>
+</div>
+<div class="container-4">
+  <div class="content-4" fxLayoutAlign="end center">
+    <button mat-raised-button [disabled]="respo == 0" (click)="proximo()">Próximo</button>
+  </div>
+</div>
+

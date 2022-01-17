@@ -1,0 +1,10 @@
+<div class="container-perguntas" *ngFor="let item of items; let j = index">
+  <form *ngIf="j+1 == perg" fxLayout="column" fxLayoutGap="30px">
+    <label>{{ item.pergunta }}</label>
+    <mat-radio-group [(ngModel)]="respo" name="answer" fxLayout="column" fxLayoutGap="10px">
+        <mat-radio-button *ngFor="let resposta of item.respostas; let i = index" [value]="i+1" (click)="question(i+1)">
+          {{resposta.resp}}
+        </mat-radio-button>
+    </mat-radio-group>
+  </form>
+</div>

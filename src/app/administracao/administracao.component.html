@@ -1,0 +1,318 @@
+<!-- Question 1 -->
+
+<div fxLayout="none" class="container" *ngIf="nPergunta === 1">
+  <div class="admin" *ngFor="let item of items">
+    <div
+      [fxLayout]="
+        resposta == 0 && nPergunta == 1
+          ? 'none'
+          : resposta == 2 && nPergunta == 1
+          ? 'row'
+          : resposta == 3 && nPergunta == 1
+          ? 'column-reverse'
+          : 'column'
+      "
+      class="card"
+    >
+      <span>
+        <mat-icon aria-hidden="false">{{ item.icon }}</mat-icon>
+      </span>
+      <h3 class="title">{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+      <div></div>
+    </div>
+  </div>
+</div>
+
+<!-- Question 1 -->
+
+<!-- Question 2 -->
+
+<div fxLayout="none" class="container" *ngIf="nPergunta === 2">
+  <div class="admin" *ngFor="let item of items">
+    <div
+      fxLayout="column"
+      [fxLayoutAlign]="
+        resposta == 0 && nPergunta == 2
+          ? 'none'
+          : resposta == 2 && nPergunta == 2
+          ? 'center start'
+          : resposta == 3 && nPergunta == 2
+          ? 'center end'
+          : nPergunta > 1
+          ? 'cente center'
+          : 'none'
+      "
+      class="card"
+    >
+      <span>
+        <mat-icon aria-hidden="false">{{ item.icon }}</mat-icon>
+      </span>
+      <h3 class="title">{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+      <div></div>
+    </div>
+  </div>
+</div>
+
+<!-- Question 2 -->
+
+<!-- Question 3 -->
+
+<div
+  [fxLayout]="
+    resposta == 0 && nPergunta == 3
+      ? 'none'
+      : resposta == 1 && nPergunta == 3
+      ? 'row wrap'
+      : resposta == 2 && nPergunta == 3
+      ? 'row'
+      : resposta == 3 && nPergunta == 3
+      ? 'column wrap'
+      : nPergunta > 2
+      ? 'row wrap'
+      : 'none'
+  "
+  class="container"
+  *ngIf="nPergunta == 3"
+>
+  <div class="admin" *ngFor="let item of items">
+    <div fxLayout="column" fxLayoutAlign="center center" class="card">
+      <span>
+        <mat-icon aria-hidden="false">{{ item.icon }}</mat-icon>
+      </span>
+      <h3 class="title">{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+      <div></div>
+    </div>
+  </div>
+</div>
+
+<!-- Question 3 -->
+
+<!-- Question 4 -->
+
+<div
+  fxLayout="row wrap"
+  class="container"
+  *ngIf="resposta == 0 && nPergunta == 4"
+>
+  <div class="admin" *ngFor="let item of items">
+    <div fxLayout="column" fxLayoutAlign="center center" class="card">
+      <span>
+        <mat-icon aria-hidden="false">{{ item.icon }}</mat-icon>
+      </span>
+      <h3 class="title">{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+      <div></div>
+    </div>
+  </div>
+</div>
+
+<div
+  fxLayout="row wrap"
+  fxLayoutGap="16px"
+  class="container"
+  *ngIf="resposta == 1 && nPergunta == 4"
+>
+  <div class="admin" *ngFor="let item of items">
+    <div fxLayout="column" fxLayoutAlign="center center" class="card">
+      <span>
+        <mat-icon aria-hidden="false">{{ item.icon }}</mat-icon>
+      </span>
+      <h3 class="title">{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+      <div></div>
+    </div>
+  </div>
+</div>
+
+<div
+  fxLayout="row wrap"
+  fxFlex="16"
+  class="container"
+  *ngIf="resposta == 2 && nPergunta == 4"
+>
+  <div class="admin" *ngFor="let item of items">
+    <div fxLayout="column" fxLayoutAlign="center center" class="card">
+      <span>
+        <mat-icon aria-hidden="false">{{ item.icon }}</mat-icon>
+      </span>
+      <h3 class="title">{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+      <div></div>
+    </div>
+  </div>
+</div>
+
+<div
+  fxLayout="row wrap"
+  fxFlexOffset="16"
+  class="container"
+  *ngIf="resposta == 3 && nPergunta == 4"
+>
+  <div class="admin" *ngFor="let item of items">
+    <div fxLayout="column" fxLayoutAlign="center center" class="card">
+      <span>
+        <mat-icon aria-hidden="false">{{ item.icon }}</mat-icon>
+      </span>
+      <h3 class="title">{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+      <div></div>
+    </div>
+  </div>
+</div>
+
+<!-- Question 4 -->
+
+<!-- Question 5 -->
+
+<div
+  fxLayout="row wrap"
+  fxLayoutGap="16px"
+  class="container"
+  *ngIf="resposta == 0 && nPergunta == 5"
+>
+  <div class="admin" *ngFor="let item of items">
+    <div fxLayout="column" fxLayoutAlign="center center" class="card">
+      <span>
+        <mat-icon aria-hidden="false">{{ item.icon }}</mat-icon>
+      </span>
+      <h3 class="title">{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+      <div></div>
+    </div>
+  </div>
+</div>
+
+<div
+  fxLayout="row wrap"
+  fxLayoutGap="16px"
+  class="container"
+  *ngIf="resposta == 1 && nPergunta == 5"
+>
+  <div fxFlex="23" class="admin" *ngFor="let item of items">
+    <div fxLayout="column" fxLayoutAlign="center center" class="card">
+      <span>
+        <mat-icon aria-hidden="false">{{ item.icon }}</mat-icon>
+      </span>
+      <h3 class="title">{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+      <div></div>
+    </div>
+  </div>
+</div>
+
+<div
+  fxLayout="row wrap"
+  fxLayoutGap="16px"
+  class="container"
+  *ngIf="resposta == 2 && nPergunta == 5"
+>
+  <div fxLayoutGap="23" class="admin" *ngFor="let item of items">
+    <div fxLayout="column" fxLayoutAlign="center center" class="card">
+      <span>
+        <mat-icon aria-hidden="false">{{ item.icon }}</mat-icon>
+      </span>
+      <h3 class="title">{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+      <div></div>
+    </div>
+  </div>
+</div>
+
+<div
+  fxLayout="row wrap"
+  fxLayoutGap="16px"
+  class="container"
+  *ngIf="resposta == 3 && nPergunta == 5"
+>
+  <div fxFlexOffset="23" class="admin" *ngFor="let item of items">
+    <div fxLayout="column" fxLayoutAlign="center center" class="card">
+      <span>
+        <mat-icon aria-hidden="false">{{ item.icon }}</mat-icon>
+      </span>
+      <h3 class="title">{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+      <div></div>
+    </div>
+  </div>
+</div>
+
+<!-- Question 5 -->
+
+<!-- Question 6 -->
+
+<div
+  fxLayout="row wrap"
+  fxLayoutGap="16px"
+  class="container"
+  *ngIf="resposta == 0 && nPergunta == 6"
+>
+  <div fxFlex="23" class="admin" *ngFor="let item of items">
+    <div fxLayout="column" fxLayoutAlign="center center" class="card">
+      <span>
+        <mat-icon aria-hidden="false">{{ item.icon }}</mat-icon>
+      </span>
+      <h3 class="title">{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+      <div></div>
+    </div>
+  </div>
+</div>
+
+<div
+  fxLayout="row wrap"
+  fxLayoutGap="16px"
+  class="container"
+  *ngIf="resposta == 1 && nPergunta == 6"
+>
+  <div fxFlex="23" fxFlex.lt-md="100%" class="admin" *ngFor="let item of items">
+    <div fxLayout="column" fxLayoutAlign="center center" class="card">
+      <span>
+        <mat-icon aria-hidden="false">{{ item.icon }}</mat-icon>
+      </span>
+      <h3 class="title">{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+      <div></div>
+    </div>
+  </div>
+</div>
+
+<div
+  fxLayout="row wrap"
+  fxLayoutGap="16px"
+  class="container"
+  *ngIf="resposta == 2 && nPergunta == 6"
+>
+  <div fxFlex="23" fxFlex.lt-sm="100%" class="admin" *ngFor="let item of items">
+    <div fxLayout="column" fxLayoutAlign="center center" class="card">
+      <span>
+        <mat-icon aria-hidden="false">{{ item.icon }}</mat-icon>
+      </span>
+      <h3 class="title">{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+      <div></div>
+    </div>
+  </div>
+</div>
+
+<div
+  fxLayout="row wrap"
+  fxLayoutGap="16px"
+  class="container"
+  *ngIf="resposta == 3 && nPergunta == 6"
+>
+  <div fxFlex="23" fxFlex.md="100%" class="admin" *ngFor="let item of items">
+    <div fxLayout="column" fxLayoutAlign="center center" class="card">
+      <span>
+        <mat-icon aria-hidden="false">{{ item.icon }}</mat-icon>
+      </span>
+      <h3 class="title">{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+      <div></div>
+    </div>
+  </div>
+</div>
+
+<!-- Question 6 -->
