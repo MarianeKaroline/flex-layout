@@ -57,13 +57,13 @@ export class PerguntasComponent implements OnInit {
       pergunta: 'Como colocar espaçamentos entre os cards?',
       respostas: [
         {
-          resp: '<div fxLayout="row wrap" fxLayoutGap="16px"></div>'
+          resp: '<div fxLayoutGap="16px"></div>'
         },
         {
-          resp: '<div fxLayout="row wrap" fxFlex="16"></div>'
+          resp: '<div fxFlex="16"></div>'
         },
         {
-          resp: '<div fxLayout="row wrap" fxFlexOffset="16"></div>'
+          resp: '<div fxFlexOffset="16"></div>'
         }
       ]
     },
@@ -82,16 +82,16 @@ export class PerguntasComponent implements OnInit {
       ]
     },
     {
-      pergunta: 'Como deixar os cards com o width 100% quando a tela for menor 960px?',
+      pergunta: 'Como deixar os cards com o width 100% quando a tela for menor que 960px?',
       respostas: [
         {
-          resp: '<div fxFlex="23" fxFlex.lt-md="100%"></div>'
+          resp: '<div fxFlex.lt-md="100%"></div>'
         },
         {
-          resp: '<div fxFlex="23" fxFlex.lt-sm="100%"></div>'
+          resp: '<div fxFlex.lt-sm="100%"></div>'
         },
         {
-          resp: '<div fxFlex="23" fxFlex.md="100%">'
+          resp: '<div fxFlex.md="100%">'
         }
       ]
     }
