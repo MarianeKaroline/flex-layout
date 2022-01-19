@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   respo: number = 0;
+  perg: number = 0;
 
   title = 'Manutencao';
 
@@ -17,6 +18,10 @@ export class AppComponent {
     this.service
       .$answer
       .subscribe(s => this.respo = s);
+
+    this.service
+      .$question
+      .subscribe(s => this.perg = s);
   }
 
   proximo() {

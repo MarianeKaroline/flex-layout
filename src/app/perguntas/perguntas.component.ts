@@ -12,16 +12,30 @@ export class PerguntasComponent implements OnInit {
 
   items = [
     {
-      pergunta: 'Como deixar os elementos do card em coluna com ordem normal?',
+      pergunta: 'Como definir o tamanho dos cards?',
       respostas: [
+        {
+          resp: '<div fxLayoutGap="23"></div>'
+        },
+        {
+          resp: '<div fxFlex="23"></div>'
+        },
+        {
+          resp: '<div fxFlexOffset="23"></div>'
+        }
+      ]
+    },
+    {
+      pergunta: 'Como deixar os elementos do card em coluna (ordem uniforme)?',
+      respostas: [
+        {
+          resp: '<div fxLayout="column-reverse"></div>'
+        },
         {
           resp: '<div fxLayout="column"></div>'
         },
         {
           resp: '<div fxLayout="row"></div>'
-        },
-        {
-          resp: '<div fxLayout="column-reverse"></div>'
         }
       ]
     },
@@ -29,18 +43,32 @@ export class PerguntasComponent implements OnInit {
       pergunta: 'Como deixar os elementos do card no meio da div?',
       respostas: [
         {
-          resp: '<div fxLayoutAlign="center center"></div>'
-        },
-        {
           resp: '<div fxLayoutAlign="center start"></div>'
         },
         {
           resp: '<div fxLayoutAlign="center end"></div>'
+        },
+        {
+          resp: '<div fxLayoutAlign="center center"></div>'
         }
       ]
     },
     {
-      pergunta: 'Como deixar os cards em uma linha mas quebrando ela?',
+      pergunta: 'Como colocar espaçamentos entre os cards?',
+      respostas: [
+        {
+          resp: '<div fxFlex="16"></div>'
+        },
+        {
+          resp: '<div fxFlexOffset="16"></div>'
+        },
+        {
+          resp: '<div fxLayoutGap="16px"></div>'
+        },
+      ]
+    },
+    {
+      pergunta: 'Como deixar os cards em linha mas sem deixar ela escapar?',
       respostas: [
         {
           resp: '<div fxLayout="row wrap"></div>'
@@ -50,34 +78,6 @@ export class PerguntasComponent implements OnInit {
         },
         {
           resp: '<div fxLayout="column wrap"></div>'
-        }
-      ]
-    },
-    {
-      pergunta: 'Como colocar espaçamentos entre os cards?',
-      respostas: [
-        {
-          resp: '<div fxLayoutGap="16px"></div>'
-        },
-        {
-          resp: '<div fxFlex="16"></div>'
-        },
-        {
-          resp: '<div fxFlexOffset="16"></div>'
-        }
-      ]
-    },
-    {
-      pergunta: 'Como definir o tamanho dos cards?',
-      respostas: [
-        {
-          resp: '<div fxFlex="23"></div>'
-        },
-        {
-          resp: '<div fxLayoutGap="23"></div>'
-        },
-        {
-          resp: '<div fxFlexOffset="23"></div>'
         }
       ]
     },

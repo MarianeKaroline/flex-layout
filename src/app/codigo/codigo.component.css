@@ -1,1 +1,20 @@
+.indent-1,
+.indent-9 {
+  text-indent: 20px;
+}
 
+.indent-2,
+.indent-8 {
+  text-indent: 40px;
+}
+
+.indent-3,
+.indent-5,
+.indent-6,
+.indent-7 {
+  text-indent: 60px;
+}
+
+.indent-4 {
+  text-indent: 80px;
+}

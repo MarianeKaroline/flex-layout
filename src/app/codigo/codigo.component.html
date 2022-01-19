@@ -1,7 +1,9 @@
 <div *ngFor="let item of codigo; let i = index">
   <div *ngFor="let html of item.html; let j = index">
-    <p *ngIf="i+1 == perg && j+1 == respo">
-      {{ html.texto }}
-    </p>
+    <div *ngIf="i+1 == perg && j+1 == respo">
+      <div *ngFor="let text of html.texto; let k = index">
+        <p class="indent-{{k}}">{{text.p}}</p>
+      </div>
+    </div>
   </div>
 </div>

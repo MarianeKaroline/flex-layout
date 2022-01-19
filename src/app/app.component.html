@@ -1,4 +1,4 @@
-<div class="container-1" fxLayoutAlign="space-between center">
+<div *ngIf="perg < 7" class="container-1" fxLayoutAlign="space-between center">
   <div class="content-1">
     <app-perguntas></app-perguntas>
   </div>
@@ -6,14 +6,27 @@
     <app-codigo></app-codigo>
   </div>
 </div>
-<div class="container-3" fxLayoutAlign="center center">
+<div *ngIf="perg < 7" class="container-3" fxLayoutAlign="center center">
   <div class="content-3">
     <app-administracao></app-administracao>
   </div>
 </div>
-<div class="container-4">
+<div *ngIf="perg < 7" class="container-4">
   <div class="content-4" fxLayoutAlign="end center">
-    <button mat-raised-button [disabled]="respo == 0" (click)="proximo()">Próximo</button>
+    <button mat-raised-button *ngIf="perg < 6" [disabled]="respo == 0" (click)="proximo()">Próximo</button>
+    <button mat-raised-button *ngIf="perg == 6" [disabled]="respo == 0" (click)="proximo()">Finalizar</button>
+  </div>
+</div>
+
+
+<div *ngIf="perg == 7" class="container-success">
+  <div class="pyro">
+    <div class="before"></div>
+    <div class="after"></div>
+  </div>
+  <div class="content-success" fxLayout="column" fxLayoutAlign="center center">
+    <p>Yeeeeey</p>
+    <app-administracao></app-administracao>
   </div>
 </div>
 
