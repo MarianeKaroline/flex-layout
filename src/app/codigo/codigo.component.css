@@ -18,3 +18,7 @@
 .indent-4 {
   text-indent: 80px;
 }
+
+.cod {
+  border: 1px solid #ccc;
+}

@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   respo: number = 0;
   perg: number = 0;
+  activated: boolean = true;
 
   title = 'Manutencao';
 

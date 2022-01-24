@@ -710,12 +710,47 @@ export class CodigoComponent implements OnInit {
         }
       ]
 
-    },
-
+    }
   ]
 
   respo: number = 0;
   perg: number = 0;
+
+  questao = [
+    {
+      p: '<div fxLayout="column wrap" fxLayoutGap="16px" class="container">'
+    },
+    {
+      p: '<div fxFlexOffset="23"  fxFlex.md="100%" class="admin" *ngFor="let item of items">'
+    },
+    {
+      p: '<div fxLayout="column" fxLayoutAlign="center start" class="card">'
+    },
+    {
+      p: '<span>'
+    },
+    {
+      p: '<mat-icon aria-hidden="false">{{ item.icon }}</mat-icon>'
+    },
+    {
+      p: '</span>'
+    },
+    {
+      p: '<h3 class="title">{{ item.title }}</h3>'
+    },
+    {
+      p: '<p>{{ item.description }}</p>'
+    },
+    {
+      p: '</div>'
+    },
+    {
+      p: '</div>'
+    },
+    {
+      p: '</div>'
+    }
+  ]
 
   constructor(private service: AppService) { }
 

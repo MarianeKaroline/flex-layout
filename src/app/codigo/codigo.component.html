@@ -7,3 +7,9 @@
     </div>
   </div>
 </div>
+
+<div *ngIf="perg == 7" class="cod">
+  <div *ngFor="let quest of questao; let i = index">
+    <p class="indent-{{i}}">{{quest.p}}</p>
+  </div>
+</div>
