@@ -252,7 +252,7 @@
   *ngIf="resposta == 1 && nPergunta == 6"
 >
   <div fxFlex="23" fxFlex.lt-md="100%" class="admin" *ngFor="let item of items">
-    <div fxLayout="column" fxLayoutAlign="center center" class="card">
+    <div fxLayout="column" fxLayoutAlign="center center" [ngStyle.md]="{'height': '174px'}" class="card">
       <span>
         <mat-icon aria-hidden="false">{{ item.icon }}</mat-icon>
       </span>
@@ -270,7 +270,7 @@
   *ngIf="resposta == 2 && nPergunta == 6"
 >
   <div fxFlex="23" fxFlex.lt-sm="100%" class="admin" *ngFor="let item of items">
-    <div fxLayout="column" fxLayoutAlign="center center" class="card">
+    <div fxLayout="column" fxLayoutAlign="center center" [ngStyle]="{'height': '154px'}" [ngStyle.md]="{'height': '174px'}" class="card">
       <span>
         <mat-icon aria-hidden="false">{{ item.icon }}</mat-icon>
       </span>
@@ -288,7 +288,7 @@
   *ngIf="resposta == 3 && nPergunta == 6"
 >
   <div fxFlex="23" fxFlex.md="100%" class="admin" *ngFor="let item of items">
-    <div fxLayout="column" fxLayoutAlign="center center" class="card">
+    <div fxLayout="column" fxLayoutAlign="center center" [ngStyle.md]="{'height': '174px'}" class="card">
       <span>
         <mat-icon aria-hidden="false">{{ item.icon }}</mat-icon>
       </span>
@@ -310,7 +310,7 @@
   *ngIf="nPergunta == 7"
 >
   <div fxFlex="23" fxFlex.lt-md="100%" class="admin" *ngFor="let item of items">
-    <div fxLayout="column" fxLayoutAlign="center center" class="card">
+    <div fxLayout="column" fxLayoutAlign="center center" [ngStyle.md]="{'height': '174px'}" class="card">
       <span>
         <mat-icon aria-hidden="false">{{ item.icon }}</mat-icon>
       </span>

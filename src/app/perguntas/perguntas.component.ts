@@ -68,7 +68,7 @@ export class PerguntasComponent implements OnInit {
       ]
     },
     {
-      pergunta: 'Como deixar os cards em linha mas sem deixar ela escapar?',
+      pergunta: 'Como deixar os cards em 2 linhas?',
       respostas: [
         {
           resp: '<div fxLayout="row wrap"></div>'

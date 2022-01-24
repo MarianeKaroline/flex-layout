@@ -8,6 +8,7 @@ import { AdministracaoComponent } from './administracao/administracao.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { FlexModule } from '@angular/flex-layout';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatRadioModule } from '@angular/material/radio';
 import { PerguntasComponent } from './perguntas/perguntas.component';
 import { MatStepperModule } from '@angular/material/stepper';
@@ -32,10 +33,12 @@ import { CodigoComponent } from './codigo/codigo.component';
     MatRadioModule,
     MatStepperModule,
     FormsModule,
-    MatButtonModule
+    MatButtonModule,
+    FlexLayoutModule
   ],
   exports: [
-    CommonModule
+    CommonModule,
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
